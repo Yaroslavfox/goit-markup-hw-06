@@ -734,6 +734,10 @@ address {
 	margin-bottom: 8px;
 }
 
+.modal-form-text-area {
+	margin-bottom: 1.69px;
+}
+
 .modal-form-field:last-child {
 	margin-bottom: 0ch;
 }
