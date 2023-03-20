@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
@@ -415,6 +415,21 @@
                         </li>
                     </ul>
                 </div>
+                <div class="form">
+                    <p class="subscribe-text">Subscribe</p>
+                    <form action="" class="form-subscribe">
+
+                        <label class="subscribe-input-desc" for="email"></label>
+                        <input class="subscribe-input-wraper" type="email" style="color: white;" id="email" name="email"
+                            required placeholder="E-mail">
+                        <button class="subscribe-btn" type="submit">Subscribe <svg class="subscribe-icon">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg></button>
+                    </form>
+
+
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
@@ -427,6 +442,65 @@
                 </svg>
 
             </button>
+            <form class="modal-form">
+
+                <div class="text">
+                    <p>Leave your contacts and we will call you back</p>
+                </div>
+
+
+
+                <label class="modal-form-field">
+                    <span class="modal-form-input-desc">Name</span>
+                    <span class="modal-form-input-wraper"><input type="text" name="user-name" class="modal-form-input"
+                            required>
+                        <svg class="modal-icon">
+                            <use href="./images/icons.svg#icon-man"></use>
+                        </svg>
+                    </span>
+
+                </label>
+
+
+                <label class=" modal-form-field">
+                    <span class="modal-form-input-desc">Phone</span>
+                    <span class="modal-form-input-wraper"><input type="tel" name="user-phone" class="modal-form-input"
+                            required>
+                        <svg class="modal-icon">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </span>
+
+                </label>
+
+
+                <label class="modal-form-field">
+                    <span class="modal-form-input-desc">Email</span>
+                    <span class="modal-form-input-wraper"><input type="email" name="user-email" class="modal-form-input"
+                            required>
+                        <svg class="modal-icon">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                    </span>
+
+                </label>
+
+
+                <label class="modal-form-field">
+                    <span class="modal-form-input-desc">Comment</span>
+
+                    <textarea name="user-comment" class="modal-form-message" placeholder="Text input"></textarea>
+                </label>
+
+
+                <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check visually-hidden">
+                <label for="user-policy" class="modal-form-check-desk">I accept the terms and conditions of the&nbsp;<a
+                        href=""> Privacy Policy</a></label>
+
+                <button type="submit" class="modal-form-submit">Send</button>
+
+            </form>
+
         </div>
     </div>
 
